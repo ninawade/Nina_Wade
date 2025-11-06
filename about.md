@@ -1,6 +1,7 @@
 ---
 title: Über mich
 ---
+{% include nav.html %}
 
 # Über mich
 
