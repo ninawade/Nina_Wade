@@ -1,6 +1,7 @@
 ---
 title: Projekte
 ---
+{% include nav.html %}
 
 # Meine Projekte
 
