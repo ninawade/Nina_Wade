@@ -1,0 +1,12 @@
+title: Meine Website
+description: Eine einfache GitHub Pages Seite mit Jekyll
+theme: jekyll-theme-minimal
+
+# Navigationseinträge
+nav:
+  - name: Start
+    link: /
+  - name: Über mich
+    link: /about
+  - name: Projekte
+    link: /projects
