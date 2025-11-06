@@ -1,6 +1,7 @@
 ---
 title: Start
 ---
+{% include nav.html %}
 
 # Willkommen auf meiner Website 👋
 
