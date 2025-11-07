@@ -5,8 +5,9 @@ theme: jekyll-theme-minimal
 # Navigationseinträge
 nav:
   - name: Start
-    link: /
+    link: /Nina_Wade/
   - name: Über mich
-    link: /about
+    link: /Nina_Wade/about
   - name: Projekte
-    link: /projects
+    link: /Nina_Wade/projects
+
