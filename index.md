@@ -3,7 +3,7 @@ title: Start
 ---
 {% include nav.html %}
 
-# Willkommen auf meiner Website 👋
+# Willkommen
 
 Dies ist meine GitHub Pages Seite mit dem **Minimal Theme**.
 
