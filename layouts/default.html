@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Dein eigenes CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    {{ content_for_head }}
+
+    <!-- SEO & Theme Support -->
+    {%- seo -%}
   </head>
+
   <body>
     <header class="site-header">
       <div class="wrapper">
@@ -27,8 +32,11 @@
       </div>
     </main>
 
-    <footer>
-      © {{ site.title }} {{ site.time | date: '%Y' }}
+    <footer class="site-footer">
+      <div class="wrapper">
+        © {{ site.title }} {{ site.time | date: "%Y" }}
+      </div>
     </footer>
   </body>
 </html>
+
