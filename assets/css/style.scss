@@ -1,46 +1,34 @@
 ---
 ---
 
-/* Importiere das Minimal Theme */
+/* Importiere das Minimal Theme von GitHub Pages */
 @import "{{ site.theme }}";
 
-/* ---- Eigene Designänderungen ab hier ---- */
-
-/* Beispiel: Navigation */
-header.site-header {
-  background-color: #5C4450;
-}
-
-/* Links in der Navigation */
-.site-nav .page-link {
-  color: white;
-}
-
-/* Hover-Farbe */
-.site-nav .page-link:hover {
-  color: #e3c6ff;
-}
-
-/* Seitentitel (oben links) */
-.site-title {
-  color: #5C4450;
-}
+/* ============================================================
+   Eigenes Design – Nina Wade Website
+   ============================================================ */
 
 /* Allgemeine Schriftart */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: #333;
 }
-/* --- Navigation linksbündig ausrichten --- */
 
-/* Der Header-Container (Standard: center) */
+/* Falls Ubuntu noch nicht geladen ist: von Google Fonts einbinden */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* ---------- Header / Navigation ---------- */
+
+/* Header-Container: alles linksbündig */
 header.site-header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Links statt zentriert */
+  align-items: flex-start;
   text-align: left;
+  padding: 1rem 0;
 }
 
-/* Falls du den Titel und die Navigation in einer Zeile willst */
+/* Für größere Bildschirme: Titel und Navigation nebeneinander */
 @media (min-width: 600px) {
   header.site-header {
     flex-direction: row;
@@ -57,7 +45,31 @@ header.site-header {
   }
 }
 
-/* Optional: Abstand und Aussehen der Links */
+/* ---------- Titel ---------- */
+.site-title {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5C4450; /* gleiche Farbe wie Navigation */
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* ---------- Navigation ---------- */
 .site-nav .page-link {
+  color: #5C4450;       /* Hauptfarbe */
   margin-right: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav .page-link:hover {
+  color: #866979;       /* hellere Variante beim Hover */
+}
+
+/* ---------- Optional: Footer ---------- */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #5C4450;
+  font-size: 0.9rem;
 }
