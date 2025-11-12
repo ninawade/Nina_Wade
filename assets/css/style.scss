@@ -1,0 +1,32 @@
+---
+---
+
+/* Importiere das Minimal Theme */
+@import "{{ site.theme }}";
+
+/* ---- Eigene Designänderungen ab hier ---- */
+
+/* Beispiel: Navigation */
+header.site-header {
+  background-color: #7624bf;
+}
+
+/* Links in der Navigation */
+.site-nav .page-link {
+  color: white;
+}
+
+/* Hover-Farbe */
+.site-nav .page-link:hover {
+  color: #e3c6ff;
+}
+
+/* Seitentitel (oben links) */
+.site-title {
+  color: #7624bf;
+}
+
+/* Allgemeine Schriftart */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
