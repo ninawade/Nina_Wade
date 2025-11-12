@@ -1,4 +1,8 @@
 ---
+layout: default
+title: Start
+---
+---
 title: Start
 ---
 {% include nav.html %}
