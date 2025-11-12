@@ -1,83 +1,82 @@
 ---
 ---
 
-/* Importiere das Minimal Theme von GitHub Pages */
+/* -----------------------------------------------------------
+   Eigene Anpassungen für GitHub Pages – Minimal Theme
+   ----------------------------------------------------------- */
+
+/* Zuerst das Theme laden */
 @import "{{ site.theme }}";
 
-/* ============================================================
-   Eigenes Design – Nina Wade Website
-   ============================================================ */
-
-/* Allgemeine Schriftart */
-body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #333;
-}
-
-/* Falls Ubuntu noch nicht geladen ist: von Google Fonts einbinden */
+/* Schriftart von Google Fonts laden */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
+/* ---------- Allgemeine Schriftart ---------- */
+body {
+  font-family: 'Ubuntu', sans-serif !important;
+  color: #333 !important;
+}
+
 /* ---------- Header / Navigation ---------- */
-
-/* Header-Container: alles linksbündig */
 header.site-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  padding: 1rem 0;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding: 1rem 0 !important;
 }
-/* Erzwinge linksbündige Navigation (überschreibt Minimal Theme) */
+
+/* Navigation wirklich linksbündig */
 .site-nav {
-  width: 100%;              /* Navigation nimmt ganze Breite ein */
-  text-align: left !important;  /* erzwingt linke Ausrichtung */
-  justify-content: flex-start !important; /* Links nach links schieben */
-  display: flex !important;  /* sorgt für Flex-Layout */
-  gap: 1.5rem;               /* Abstand zwischen Links */
-}
-
-/* Für größere Bildschirme: Titel und Navigation nebeneinander */
-@media (min-width: 600px) {
-  header.site-header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .site-title {
-    margin-right: 2rem;
-  }
-
-  .site-nav {
-    text-align: left;
-  }
+  width: 100% !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  display: flex !important;
+  gap: 1.5rem !important;
 }
 
 /* ---------- Titel ---------- */
 .site-title {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5C4450; /* gleiche Farbe wie Navigation */
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif !important;
+  color: #5C4450 !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  text-decoration: none !important;
 }
 
 /* ---------- Navigation ---------- */
 .site-nav .page-link {
-  color: #5C4450;       /* Hauptfarbe */
-  margin-right: 15px;
-  text-decoration: none;
-  font-weight: 500;
+  color: #5C4450 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
 
 .site-nav .page-link:hover {
-  color: #866979;       /* hellere Variante beim Hover */
+  color: #866979 !important;
 }
 
-/* ---------- Optional: Footer ---------- */
+/* ---------- Für größere Bildschirme ---------- */
+@media (min-width: 600px) {
+  header.site-header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 2rem !important;
+  }
+
+  .site-title {
+    margin-right: 2rem !important;
+  }
+
+  .site-nav {
+    text-align: left !important;
+  }
+}
+
+/* ---------- Footer ---------- */
 footer {
-  text-align: center;
-  margin-top: 2rem;
-  color: #5C4450;
-  font-size: 0.9rem;
+  text-align: center !important;
+  margin-top: 2rem !important;
+  color: #5C4450 !important;
+  font-size: 0.9rem !important;
 }
